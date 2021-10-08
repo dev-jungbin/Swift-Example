@@ -59,37 +59,37 @@ if let a: Americano = coffee as? Americano {
     print("This is Americano")
 } else {
     print("FAIL")
-}
+} // FAIL
 
 if let a: Latte = coffee as? Latte {
     print("This is Latte")
 } else {
     print("FAIL")
-}
+} // FAIL
 
 if let a: Coffee = coffee as? Coffee {
     print("This is Coffee")
 } else {
     print("FAIL")
-}
+} // FAIL
 
 if let b: Americano = icedAmericano as? Americano {
     print("This is Americano")
 } else{
     print("FAIL")
-}
+} // This is Americano
 
 if let b: Latte = icedAmericano as? Latte {
     print("This is Latte")
 } else {
     print("FAIL")
-}
+} // FAIL
 
 if let b: Coffee  = icedAmericano as? Coffee {
     print("This is Coffee")
 } else {
     print("FAIL")
-}
+} // This is Coffee
 
 let castedCoffee: Coffee = vanillaLatte as! Coffee // 항상 성공하는 다운캐스팅
 let castedOKCoffee: Coffee = vanillaLatte as Coffee
