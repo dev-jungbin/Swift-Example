@@ -23,7 +23,7 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setData(data: ToDoModelElement) {
+    func setData(data: ModelElement) {
         indexLabel.text = "\(data.id)"
         titleLabel.text = data.title
     }
