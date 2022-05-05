@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var summaryLabel: UILabel!
+    
     var toDoData = ToDoModel()
     
     override func viewDidLoad() {
@@ -30,12 +32,17 @@ class ViewController: UIViewController {
             
             DispatchQueue.main.async {
                 self?.updateToDoTableView()
+                self?.updateSummaryLabel()
             }
         }.resume()
     }
     
     private func updateToDoTableView() {
         tableView.reloadData()
+    }
+    
+    private func updateSummaryLabel() {
+        summaryLabel.text = "총 할 일: \(toDoData.count)개"
     }
 }
 

@@ -60,6 +60,7 @@
 		C711CC372823E39800C52B04 /* MVVM-Example */ = {
 			isa = PBXGroup;
 			children = (
+				C711CC522823EB9400C52B04 /* New Group */,
 				C711CC382823E39800C52B04 /* AppDelegate.swift */,
 				C711CC3A2823E39800C52B04 /* SceneDelegate.swift */,
 				C711CC3C2823E39800C52B04 /* ViewController.swift */,
@@ -68,9 +69,16 @@
 				C711CC432823E39900C52B04 /* LaunchScreen.storyboard */,
 				C711CC462823E39900C52B04 /* Info.plist */,
 				C711CC4E2823E6A500C52B04 /* TableViewCell.swift */,
-				C711CC502823E71D00C52B04 /* ToDoModel.swift */,
 			);
 			path = "MVVM-Example";
+			sourceTree = "<group>";
+		};
+		C711CC522823EB9400C52B04 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				C711CC502823E71D00C52B04 /* ToDoModel.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
